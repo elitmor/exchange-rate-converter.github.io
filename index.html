@@ -2,12 +2,43 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exchange rate converter</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Exchange Rate Calculator</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <script src="js/script.js"></script>
+    <div class="container">
+      <div>
+        <div>
+          <select class="select" id="currency-first">
+            <option value="USD">USD</option>
+          </select>
+          <input
+            class="input"
+            type="number"
+            id="amount-first"
+            placeholder="0"
+            value="1"
+          />
+        </div>
+        <div>
+          <select class="select" id="currency-second">
+            <option value="UAH">UAH</option>
+          </select>
+          <input
+            class="input"
+            type="number"
+            id="amount-second"
+            placeholder="0"
+          />
+        </div>
+        <div>
+          <button class="btn" id="swap-element">Swap</button>
+          <div class="rate" id="rate-element"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
